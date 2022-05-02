@@ -1,0 +1,108 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "DL/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/DL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DL.dll": {}
+        }
+      },
+      "ML/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ML.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ML.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DL/1.0.0": {
+      "type": "project",
+      "path": "../DL/DL.csproj",
+      "msbuildProject": "../DL/DL.csproj"
+    },
+    "ML/1.0.0": {
+      "type": "project",
+      "path": "../ML/ML.csproj",
+      "msbuildProject": "../ML/ML.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "DL >= 1.0.0",
+      "ML >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\marco\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\marco\\Documents\\Workspace\\PL\\BL\\BL.csproj",
+      "projectName": "BL",
+      "projectPath": "C:\\Users\\marco\\Documents\\Workspace\\PL\\BL\\BL.csproj",
+      "packagesPath": "C:\\Users\\marco\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\marco\\Documents\\Workspace\\PL\\BL\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\marco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "C:\\Users\\marco\\Documents\\Workspace\\PL\\DL\\DL.csproj": {
+              "projectPath": "C:\\Users\\marco\\Documents\\Workspace\\PL\\DL\\DL.csproj"
+            },
+            "C:\\Users\\marco\\Documents\\Workspace\\PL\\ML\\ML.csproj": {
+              "projectPath": "C:\\Users\\marco\\Documents\\Workspace\\PL\\ML\\ML.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
